@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function firstNonRepeating(str1){
+            let result="";
+            let str=str1.toLowerCase();
+            for(i=1;i<str.length;i++){
+                for(j=0;j<i;j++){
+                    if(str[i]!==str[j]){
+                        result+=str[j];
+                    }
+                }
+                
+            }
+            return result
+        }
+        console.log(firstNonRepeating('Anjali')); 
+        
+    </script>
+</body>
+</html>
